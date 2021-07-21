@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 :root {
-  --ff-primary: "Roboto" . sans-serif;
+  --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Montserrat", sans serif;
   --primary-color: #fe4775;
   --secondary-color: #161060;
