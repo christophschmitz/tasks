@@ -1,0 +1,28 @@
+h1 {
+  font-size: 2rem;
+  color: var(--clr-text-primary);
+}
+h2 {
+  font-size: 1.75rem;
+  font-weight: var(--fw-primary);
+  color: var(--clr-content-passive);
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: var(--fw-primary);
+  color: var(--clr-text-secondary);
+}
+h4 {
+  font-family: var(--ff-secondary);
+  font-size: 1.25rem;
+  font-weight: var(--fw-secondary);
+  color: var(--clr-content-passive);
+}
+h5 {
+  font-size: 1rem;
+  font-weight: var(--fw-regular);
+}
+h6 {
+  font-size: 1rem;
+  font-weight: var(--fw-regular);
+}
