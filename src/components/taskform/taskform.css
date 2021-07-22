@@ -2,3 +2,12 @@ form {
   display: flex;
   flex-direction: column;
 }
+input[type="submit"] {
+  background-color: var(--clr-primary);
+  color: #fff;
+  padding: 1.6em 2em;
+  border: none;
+  font-size: 1.2em;
+  letter-spacing: 0.32px;
+  font-weight: var(--fw-primary);
+}
