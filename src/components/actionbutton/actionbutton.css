@@ -1,16 +1,17 @@
 .btn-action {
-  all: unset;
+  border: none;
   position: absolute;
   bottom: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--clr-primary);
   border-radius: 0.5rem 0 0 0;
-  border: 1.5rem solid var(--clr-primary);
-  border-width: 1.8rem 2.5rem;
+  width: 6.688rem;
+  height: 6rem;
 }
 .btn-action svg {
   height: 2.5rem;
-  width: 2.5 rem;
-  position: relative;
-  top: 0.2rem;
+  width: 2.5rem;
 }
