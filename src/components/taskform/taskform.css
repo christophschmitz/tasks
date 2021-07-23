@@ -1,0 +1,75 @@
+.outerwrapper {
+  height: 100vh;
+}
+
+.wrapper {
+  margin: 0 0 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+input[type="submit"] {
+  background-color: var(--clr-primary);
+  color: #fff;
+  padding: 1.6em 2em;
+  border: none;
+  font-size: 1.2em;
+  letter-spacing: 0.32px;
+  font-weight: var(--fw-primary);
+  justify-self: flex-end;
+}
+
+input[type="text"] {
+  border: none;
+  letter-spacing: 0.7px;
+  border-bottom: 3px solid #d4d4d4;
+  height: 4rem;
+  outline: none;
+  padding: 1rem 0 1rem 0;
+}
+input[type="text"]:focus {
+  border-bottom: 3px solid #342d2f;
+}
+input[id="task"] {
+  color: #393939;
+  font-size: 3rem;
+}
+
+::placeholder {
+  color: #d4d4d4;
+}
+
+legend,
+label[for="task"] {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.fieldsetwrapper {
+  background-color: #f7f7f7;
+  display: flex;
+  padding: 2rem 1.25rem;
+  justify-content: space-around;
+}
+
+.fieldsetwrapper input[type="radio"] {
+  display: none;
+}
+
+.fieldsetwrapper input[type="radio"]:checked + label {
+  color: var(--clr-primary);
+}
+
+fieldset {
+  margin: 3rem 0;
+  padding: 0;
+  border: none;
+}
