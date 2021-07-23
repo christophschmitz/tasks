@@ -1,5 +1,6 @@
 .outerwrapper {
   height: 100vh;
+  padding-top: 30%;
 }
 
 .wrapper {
@@ -34,12 +35,15 @@ input[type="text"] {
   outline: none;
   padding: 1rem 0 1rem 0;
 }
+
 input[type="text"]:focus {
   border-bottom: 3px solid #342d2f;
 }
+
 input[id="task"] {
   color: #393939;
   font-size: 3rem;
+  padding-right: 0.5em;
 }
 
 ::placeholder {
@@ -56,8 +60,15 @@ label[for="task"] {
 .fieldsetwrapper {
   background-color: #f7f7f7;
   display: flex;
-  padding: 2rem 1.25rem;
+  padding: 0 1.25rem;
   justify-content: space-around;
+}
+
+.fieldsetwrapper label {
+  color: #393939;
+  cursor: pointer;
+  padding: 2rem 1rem;
+  width: 100%;
 }
 
 .fieldsetwrapper input[type="radio"] {
