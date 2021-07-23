@@ -1,0 +1,6 @@
+.add-task-page {
+  height: 100vh;
+  width: fit-content;
+  display: grid;
+  grid-template-rows: 1fr, 2.5fr;
+}
