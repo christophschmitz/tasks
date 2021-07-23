@@ -2,6 +2,7 @@
   margin: 0 0 3rem 1.5rem;
   display: flex;
   flex-direction: column;
+  width: 100vw;
 }
 
 form {
@@ -62,7 +63,7 @@ label[for="task"] {
 .fieldsetwrapper label {
   color: #393939;
   cursor: pointer;
-  padding: 2rem 0.5rem;
+  padding: 2rem 0.2rem;
   width: 100%;
 }
 
