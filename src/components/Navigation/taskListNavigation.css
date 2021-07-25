@@ -1,8 +1,8 @@
-nav.navigation a {
+nav.navi a {
   text-decoration: none;
 }
 
-nav.navigation ul {
+nav.navi ul {
   list-style: none;
   padding: 0;
   display: flex;
@@ -10,7 +10,7 @@ nav.navigation ul {
   align-items: center;
 }
 
-nav.navigation li {
+nav.navi li {
   padding: 2.5rem;
   text-transform: uppercase;
   color: #d4d4d4;
@@ -20,9 +20,9 @@ nav.navigation li {
   transform: rotate(180deg);
 }
 
-nav.navigation li:hover {
+nav.navi li:hover {
   color: #fe4775;
 }
-nav.navigation li:active {
+nav.navi li:active {
   color: #fe4775;
 }
