@@ -1,9 +1,9 @@
 import "./taskform.css";
-import taskform from "./taskform.html";
+import Taskform from "./taskform.html";
 
 export default {
-  title: "Components/taskform",
+  title: "Components/Taskform",
   parameters: { layout: "fullscreen" },
 };
 
-export const Taskformular = () => taskform;
+export const Taskformular = () => Taskform;

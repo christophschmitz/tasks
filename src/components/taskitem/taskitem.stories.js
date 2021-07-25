@@ -1,9 +1,9 @@
 import "./taskitem.css";
-import taskitem from "./taskitem.html";
+import Taskitem from "./taskitem.html";
 
 export default {
-  title: "Components/taskitem",
+  title: "Components/Taskitem",
   parameters: { layout: "fullscreen" },
 };
 
-export const Taskformular = () => taskitem;
+export const Taskformular = () => Taskitem;
