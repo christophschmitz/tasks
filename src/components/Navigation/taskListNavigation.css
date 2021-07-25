@@ -1,0 +1,28 @@
+nav.navi a {
+  text-decoration: none;
+}
+
+nav.navi ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav.navi li {
+  padding: 2.5rem;
+  text-transform: uppercase;
+  color: #d4d4d4;
+  letter-spacing: 3px;
+  cursor: pointer;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+nav.navi li:hover {
+  color: #fe4775;
+}
+nav.navi li:active {
+  color: #fe4775;
+}
