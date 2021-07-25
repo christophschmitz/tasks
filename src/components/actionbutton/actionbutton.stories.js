@@ -2,7 +2,7 @@ import "./actionbutton.css";
 import actionbutton from "./actionbutton.html";
 
 export default {
-  title: "Components/actionbutton",
+  title: "Components/Actionbutton",
   parameters: { layout: "fullscreen" },
 };
 
