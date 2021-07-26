@@ -5,22 +5,20 @@
   grid-template-rows: 1fr, 1fr, 2.5fr;
 }
 .menu {
-  color: black;
-  padding-left: 1.5rem;
+  padding: 1.5rem 0 1.5rem 1.5rem;
 }
 .oldtask {
   grid-row-start: 2;
   grid-column-start: 1;
   grid-column-end: 3;
-  padding-left: 1.5rem;
+  margin: 0.75rem 0 0 1.5rem;
 }
 .bell {
   grid-row-start: 2;
   grid-column-start: 3;
   grid-column-end: 4;
-  justify-self: end;
-  align-self: start;
-  z-index: 1000;
+  justify-self: center;
+  padding: 2rem 1rem 1.5rem 1.5rem;
 }
 .navi {
   grid-row-start: 3;
