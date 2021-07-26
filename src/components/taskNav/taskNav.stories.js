@@ -4,8 +4,7 @@ import TaskNavActive from "./taskNavActive.html";
 
 export default {
   title: "Components/TaskNav",
-  parameters: { layout: "center" },
+  parameters: { layout: "fullscreen" },
 };
-
 export const Tasknav = () => TaskNav;
 export const TasknavA = () => TaskNavActive;
