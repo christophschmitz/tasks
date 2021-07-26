@@ -1,9 +1,9 @@
 import "./iconButton.css";
-import iconButton from "./iconButton.html";
+import iconButtonMenu from "./iconButton-menu.html";
 
 export default {
   title: "Components/IconButton",
-  parameters: { layout: "fullscreen" },
+  parameters: { layout: "center" },
 };
 
-export const Button = () => iconButton;
+export const Button = () => iconButtonMenu;
