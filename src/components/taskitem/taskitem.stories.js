@@ -4,7 +4,7 @@ import Taskitemdone from "./taskitemdone.html";
 
 export default {
   title: "Components/Taskitem",
-  parameters: { layout: "fullscreen" },
+  parameters: { layout: "center" },
 };
 
 export const Taskformular = () => Taskitem;
