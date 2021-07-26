@@ -1,6 +1,11 @@
 import "./taskNav.css";
-import taskNav from "./taskNav.html";
+import TaskNav from "./taskNav.html";
+import TaskNavActive from "./taskNavActive.html";
 
-export default { title: "Components/Tasknav" };
+export default {
+  title: "Components/TaskNav",
+  parameters: { layout: "center" },
+};
 
-export const TaskNav = () => taskNav;
+export const Tasknav = () => TaskNav;
+export const TasknavA = () => TaskNavActive;
