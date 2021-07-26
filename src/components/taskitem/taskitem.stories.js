@@ -1,5 +1,6 @@
 import "./taskitem.css";
 import Taskitem from "./taskitem.html";
+import Taskitemdone from "./taskitemdone.html";
 
 export default {
   title: "Components/Taskitem",
@@ -7,3 +8,4 @@ export default {
 };
 
 export const Taskformular = () => Taskitem;
+export const Taskformulardone = () => Taskitemdone;

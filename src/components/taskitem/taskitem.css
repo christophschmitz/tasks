@@ -1,23 +1,14 @@
-.tasklist {
-  background: #f7f7f7;
-  padding: 3.75rem 0 0 1.5rem;
+.taskItem {
+  display: block;
+  padding: 1rem 0 1rem 1.5rem;
+  font-size: 1.4rem;
 }
 
-.listitem {
-  padding-bottom: 2rem;
+.taskItem__checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
-
-label {
-  font-size: 1.25rem;
-  cursor: pointer;
-}
-
-input[name="newtask"] {
-  display: none;
-}
-
-input[type="checkbox"]:checked + label {
-  text-decoration: line-through;
-  text-decoration-thickness: 0.15em;
-  text-decoration-color: var(--clr-primary);
+.taskItem__checkbox:checked + .taskItem__labelText {
+  text-decoration: line-through 0.15rem var(--clr-primary);
 }
