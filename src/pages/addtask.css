@@ -3,6 +3,7 @@
   display: grid;
   grid-template-rows: 1fr, 2.5fr;
 }
+
 .task-page {
   margin: 7.036rem 0 0 1.5rem;
 }
