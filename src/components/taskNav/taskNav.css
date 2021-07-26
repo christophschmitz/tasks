@@ -1,0 +1,8 @@
+.taskNav__link {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  color: var(--clr-content-passive);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
