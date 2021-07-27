@@ -1,6 +1,7 @@
 .taskItem {
   display: block;
   margin-bottom: 2em;
+  font-size: 1.313rem;
 }
 
 .taskItem__checkbox {
