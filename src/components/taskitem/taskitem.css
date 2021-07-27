@@ -1,7 +1,6 @@
 .taskItem {
   display: block;
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
 }
 
 .taskItem__checkbox {
@@ -9,6 +8,7 @@
   width: 0;
   height: 0;
 }
+
 .taskItem__checkbox:checked + .taskItem__labelText {
   text-decoration: line-through 0.15rem var(--clr-primary);
 }
