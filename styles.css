@@ -137,7 +137,7 @@ textarea {
 }
 
 .task-page {
-  margin: 7.036rem 0 0 1.5rem;
+  padding: 7.036rem 0 0 1.5rem;
 }
 
 .wrapper {
@@ -150,7 +150,6 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100vw;
 }
 
 input[type="submit"] {
@@ -172,6 +171,7 @@ input[type="text"] {
   height: 4rem;
   outline: none;
   padding: 1rem 0 1rem 0;
+  width: 100%;
 }
 
 input[type="text"]:focus {
