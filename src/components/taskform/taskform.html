@@ -1,18 +1,42 @@
-<form action="" class="taskform">
+<form class="taskform">
   <div class="wrapper">
     <label for="task">Description</label>
-    <input type="text" name="task" id="task" placeholder="Enter Task" />
+    <input
+      class="taskinput"
+      type="text"
+      name="task"
+      id="task"
+      placeholder="Enter Task"
+    />
     <fieldset>
       <legend>When</legend>
       <div class="fieldsetwrapper">
-        <input type="radio" name="select" id="today" checked="true" />
-        <label for="today">Today</label>
-        <input type="radio" name="select" id="tomorrow" />
-        <label for="tomorrow">Tomorrow</label>
-        <input type="radio" name="select" id="select" />
-        <label for="select">Select Date</label>
+        <input
+          class="addTaskForm__radio"
+          type="radio"
+          name="select"
+          id="today"
+          value="today"
+        />
+        <label class="addTaskForm__radioLabel" for="today">Today</label>
+        <input
+          class="addTaskForm__radio"
+          type="radio"
+          name="select"
+          id="tomorrow"
+          value="tomorrow"
+        />
+        <label class="addTaskForm__radioLabel" for="tomorrow">Tomorrow</label>
+        <input
+          class="addTaskForm__radio"
+          type="radio"
+          name="select"
+          id="select"
+          value="selectDate"
+        />
+        <label for="select" class="addTaskForm__radioLabel">Select Date</label>
       </div>
     </fieldset>
   </div>
-  <input type="submit" value="Add Task" />
+  <input class="addTaskform_submit" type="submit" value="Add Task" />
 </form>
