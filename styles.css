@@ -38,6 +38,10 @@ textarea {
   font-family: var(--ff-primary);
 }
 
+h1 {
+  font-size: 2.938rem;
+}
+
 .container {
   display: grid;
   height: 100%;
