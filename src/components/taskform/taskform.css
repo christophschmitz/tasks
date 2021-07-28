@@ -33,7 +33,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border-bottom: 3px solid #342d2f;
+  border-bottom: 3px solid var(--clr-primary);
 }
 
 input[id="task"] {
