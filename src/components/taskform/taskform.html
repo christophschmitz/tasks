@@ -1,42 +1,32 @@
-<form class="taskform">
-  <div class="wrapper">
-    <label for="task">Description</label>
-    <input
-      class="taskinput"
-      type="text"
-      name="task"
-      id="task"
-      placeholder="Enter Task"
-    />
-    <fieldset>
-      <legend>When</legend>
-      <div class="fieldsetwrapper">
-        <input
-          class="addTaskForm__radio"
-          type="radio"
-          name="select"
-          id="today"
-          value="today"
-        />
-        <label class="addTaskForm__radioLabel" for="today">Today</label>
-        <input
-          class="addTaskForm__radio"
-          type="radio"
-          name="select"
-          id="tomorrow"
-          value="tomorrow"
-        />
-        <label class="addTaskForm__radioLabel" for="tomorrow">Tomorrow</label>
-        <input
-          class="addTaskForm__radio"
-          type="radio"
-          name="select"
-          id="select"
-          value="selectDate"
-        />
-        <label for="select" class="addTaskForm__radioLabel">Select Date</label>
+<form class="addTaskForm">
+  <section class="addTaskForm__userInput">
+    <label
+      ><span class="addTaskForm__description">Description</span
+      ><input
+        class="addTaskForm__textInput"
+        type="text"
+        name="description"
+        placeholder="Enter text"
+    /></label>
+    <fieldset class="addTaskForm__fieldset">
+      <legend class="addTaskForm__description">When</legend>
+      <div class="addTaskForm__radioGroup">
+        <label>
+          <input class="addTaskForm__radio" type="radio" name="when" />
+          <span class="addTaskForm__radioLabel">Today</span>
+        </label>
+        <label>
+          <input class="addTaskForm__radio" type="radio" name="when" />
+          <span class="addTaskForm__radioLabel">Tomorrow</span>
+        </label>
+        <label>
+          <input class="addTaskForm__radio" type="radio" name="when" />
+          <span class="addTaskForm__radioLabel">Select Date</span>
+        </label>
       </div>
     </fieldset>
+  </section>
+  <div>
+    <input class="addTaskForm__submit" type="submit" value="Add task" />
   </div>
-  <input class="addTaskform_submit" type="submit" value="Add Task" />
 </form>

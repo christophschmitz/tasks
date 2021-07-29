@@ -1,83 +1,63 @@
-.wrapper {
-  padding: 0 0 3rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.taskform {
+.addTaskForm {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-input[type="submit"] {
-  background-color: var(--clr-primary);
-  color: #fff;
-  padding: 1.6em 1em;
-  font-size: 1.2rem;
-  font-weight: var(--fw-primary);
-  letter-spacing: 0.32px;
-  border: none;
-  justify-self: flex-end;
-  cursor: pointer;
+.addTaskForm__userInput {
+  margin-left: 1.5em;
 }
 
-input[type="text"] {
-  border: none;
-  letter-spacing: 0.7px;
-  border-bottom: 3px solid #d4d4d4;
-  height: 4rem;
-  outline: none;
-  padding: 1rem 0 1rem 0;
-  width: 100%;
-}
-
-input[type="text"]:focus {
-  border-bottom: 3px solid var(--clr-primary);
-}
-
-input[id="task"] {
-  color: #393939;
-  font-size: 3rem;
-}
-
-::placeholder {
-  color: #d4d4d4;
-}
-
-legend,
-label[for="task"] {
-  margin-bottom: 1em;
+.addTaskForm__description {
+  display: block;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 1rem;
+  letter-spacing: 0.2em;
+  padding: 0;
 }
 
-.fieldsetwrapper {
-  background-color: #f7f7f7;
+.addTaskForm__textInput {
+  font-size: 2.5rem;
+  padding: 0.5em 0.3em 0.5em 0.1em;
+  max-width: 100%;
+  border: none;
+  border-bottom: 0.1em solid var(--clr-text-passive);
+}
+
+.addTaskForm__textInput::placeholder {
+  color: var(--clr-text-passive);
+}
+
+.addTaskForm__fieldset {
+  border: none;
+  padding: 0;
+  margin: 3em 0 0 0;
+}
+
+.addTaskForm__radioGroup {
+  border: none;
+  background-color: var(--clr-content-passive);
+  margin-top: 1em;
+  padding: 2em 1em;
   display: flex;
-  padding: 0 1.25rem;
+  flex-direction: row;
   justify-content: space-around;
 }
 
-.fieldsetwrapper label {
-  color: var(--clr-text-primary);
-  cursor: pointer;
-  padding: 2rem 0 2rem 0;
-  font-size: 1rem;
-  width: 100%;
+.addTaskForm__radio {
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
-.fieldsetwrapper input[type="radio"] {
-  display: none;
-}
-
-.fieldsetwrapper input[type="radio"]:checked + label {
+.addTaskForm__radio:checked + .addTaskForm__radioLabel {
   color: var(--clr-primary);
 }
 
-fieldset {
-  margin: 4rem 0;
-  padding: 0;
+.addTaskForm__submit {
+  font-size: 1.2rem;
   border: none;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--clr-primary);
+  color: #fff;
 }
