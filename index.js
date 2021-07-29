@@ -6,12 +6,25 @@ function sendAlert() {
 }
 const tasklist = document.querySelector(".taskList");
 
-const potentialTask = {
+const tasks = [ {
   title: "Schön erst einmal mit dem Hund spazieren gehen",
   date: "Tomorrow",
   isDone: false,
-};
+},
+{
+  title: "Schön erst einmal mit dem Hund spazieren gehen",
+  date: "Tomorrow",
+  isDone: false,
+},
+{
+  title: "Schön erst einmal mit dem Hund spazieren gehen",
+  date: "Tomorrow",
+  isDone: false,
+},
+];
 
+
+]
 // const taskOne = createTaskListItem("Kaffee kochen");
 // const taskTwo = createTaskListItem("Hund ausführen");
 const taskFromObject = createTaskListItem(potentialTask);
