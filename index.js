@@ -16,7 +16,7 @@ const potentialTask = {
 // const taskTwo = createTaskListItem("Hund ausführen");
 const taskFromObject = createTaskListItem(potentialTask);
 
-tasklist.append(taskFromObject);
+tasklist.append();
 
 function createTaskListItem(task) {
   const taskListItem = document.createElement("label");
