@@ -12,18 +12,17 @@
       <button aria-label="open menu" class="iconButton menuButton">
         <img src="./assets/menu.svg" alt="Menu Icon" />
       </button>
-
-      <div class="header">
+      <div class="headerMenu">
         <h1>Tasks</h1>
         <button aria-label="show notifications" class="iconButton">
-          <img src="./assets/bell.svg" alt="Menu Icon" />
+          <img src="./assets/bell.svg" alt="Notification Bell" />
         </button>
       </div>
 
       <section class="dateSelector">
-        <a href="#" class="taskNav__link">Today</a>
-        <a href="#" class="taskNav__link">Tomorrow</a>
-        <a href="#" class="taskNav__link">This Week</a>
+        <a href="#" class="taskNavLink">Today</a>
+        <a href="#" class="taskNavLink">Tomorrow</a>
+        <a href="#" class="taskNavLink">This Week</a>
       </section>
       <section class="taskList">
         <label class="taskItem">
@@ -53,56 +52,14 @@
         <label class="taskItem">
           <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
             class="taskItem__labelText"
-            >This one is just a very long list Item to show, how a break
-            behave</span
+            >Go to Heidepark with the Family on every weekend of the year</span
           >
         </label>
       </section>
-      <button class="btn-action">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-        >
-          <defs>
-            <style>
-              .a {
-                fill: #fff;
-              }
-              .b {
-                fill: #fe4775;
-              }
-            </style>
-          </defs>
-          <g transform="translate(-168 -762)">
-            <circle
-              class="a"
-              cx="20"
-              cy="20"
-              r="20"
-              transform="translate(168 762)"
-            />
-            <g transform="translate(-12.273 1)">
-              <rect
-                class="b"
-                width="3.042"
-                height="15.805"
-                rx="1.521"
-                transform="translate(198.655 773.597)"
-              />
-              <rect
-                class="b"
-                width="3.042"
-                height="15.805"
-                rx="1.521"
-                transform="translate(192.273 783.021) rotate(-90)"
-              />
-            </g>
-          </g>
-        </svg>
+      <button aria-label="Add new task" class="actionButton">
+        <img src="src/assets/plus.svg" alt="Plus Symbol" />
       </button>
     </main>
-    <script src="index.js" defer></script>
+    <script src="index.js" defer="true"></script>
   </body>
 </html>

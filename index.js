@@ -4,15 +4,21 @@ menuButton.onclick = sendAlert;
 function sendAlert() {
   alert("Hello World");
 }
-
 const tasklist = document.querySelector(".taskList");
 
-const taskOne = createTaskListItem("Kaffee kochen");
-const taskTwo = createTaskListItem("Hund ausführen");
+const potentialTask = {
+  title: "Schön erst einmal mit dem Hund spazieren gehen",
+  date: "Tomorrow",
+  isDone: false,
+};
 
-tasklist.append(taskOne, taskTwo);
+// const taskOne = createTaskListItem("Kaffee kochen");
+// const taskTwo = createTaskListItem("Hund ausführen");
+const taskFromObject = createTaskListItem(potentialTask);
 
-function createTaskListItem(taskName) {
+tasklist.append(taskFromObject);
+
+function createTaskListItem(task) {
   const taskListItem = document.createElement("label");
   const input = document.createElement("input");
   const span = document.createElement("span");
@@ -22,9 +28,10 @@ function createTaskListItem(taskName) {
   input.className = "taskItem__checkbox";
   input.type = "checkbox";
   input.setAttribute("name", "tasks");
+  input.checked = task.isDone;
 
   span.className = "taskItem__labelText";
-  span.innerText = taskName;
+  span.innerText = task.title;
 
   taskListItem.append(input, span);
 
