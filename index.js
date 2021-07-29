@@ -6,30 +6,39 @@ function sendAlert() {
 }
 const tasklist = document.querySelector(".taskList");
 
-const tasks = [ {
-  title: "Schön erst einmal mit dem Hund spazieren gehen",
-  date: "Tomorrow",
-  isDone: false,
-},
-{
-  title: "Schön erst einmal mit dem Hund spazieren gehen",
-  date: "Tomorrow",
-  isDone: false,
-},
-{
-  title: "Schön erst einmal mit dem Hund spazieren gehen",
-  date: "Tomorrow",
-  isDone: false,
-},
+const tasks = [
+  {
+    title: "Schön erst einmal mit dem Hund spazieren gehen",
+    date: "Tomorrow",
+    isDone: false,
+  },
+  {
+    title: "Schön erst einmal mit dem Hund spazieren gehen",
+    date: "Tomorrow",
+    isDone: false,
+  },
+  {
+    title: "Schön erst einmal mit dem Hund spazieren gehen",
+    date: "Tomorrow",
+    isDone: false,
+  },
+  {
+    title: "Schön erst einmal mit dem Hund spazieren gehen",
+    date: "Tomorrow",
+    isDone: false,
+  },
+  {
+    title: "Schön erst einmal mit dem Hund spazieren gehen",
+    date: "Tomorrow",
+    isDone: false,
+  },
 ];
 
+const taskListItems = tasks.map((task) => createTaskListItem(task));
 
-]
 // const taskOne = createTaskListItem("Kaffee kochen");
 // const taskTwo = createTaskListItem("Hund ausführen");
-const taskFromObject = createTaskListItem(potentialTask);
-
-tasklist.append();
+tasklist.append(...taskListItems);
 
 function createTaskListItem(task) {
   const taskListItem = document.createElement("label");
