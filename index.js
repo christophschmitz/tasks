@@ -1,3 +1,4 @@
+import { parseJSONFromLocalStorage } from "./utils/localStorage.js";
 const menuButton = document.querySelector(".menuButton");
 menuButton.onclick = sendAlert;
 
@@ -6,34 +7,7 @@ function sendAlert() {
 }
 const tasklist = document.querySelector(".taskList");
 
-const tasks = [
-  {
-    title: "Schön erst einmal mit dem Hund spazieren gehen",
-    date: "Tomorrow",
-    isDone: false,
-  },
-  {
-    title: "Schön erst einmal mit dem Hund spazieren gehen",
-    date: "Tomorrow",
-    isDone: false,
-  },
-  {
-    title: "Schön erst einmal mit dem Hund spazieren gehen",
-    date: "Tomorrow",
-    isDone: false,
-  },
-  {
-    title: "Schön erst einmal mit dem Hund spazieren gehen",
-    date: "Tomorrow",
-    isDone: false,
-  },
-  {
-    title: "Schön erst einmal mit dem Hund spazieren gehen",
-    date: "Tomorrow",
-    isDone: false,
-  },
-];
-
+const tasks = parseJSONFromLocalStorage("tasks", []);
 const taskListItems = tasks.map((task) => createTaskListItem(task));
 
 // const taskOne = createTaskListItem("Kaffee kochen");

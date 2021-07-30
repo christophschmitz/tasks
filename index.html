@@ -18,16 +18,27 @@
           <img src="./assets/bell.svg" alt="Notification Bell" />
         </button>
       </div>
-
-      <section class="dateSelector">
-        <a href="#" class="taskNavLink">Today</a>
-        <a href="#" class="taskNavLink">Tomorrow</a>
-        <a href="#" class="taskNavLink">This Week</a>
-      </section>
+      <div class="dateselector">
+      <label class="dateSelect">
+        <input class="dateselect__input" type="radio" value="today" /><span
+          class="dateselect__span"
+          >This Week</span
+        >
+        <label class="dateSelect">
+          <input class="dateselect__input" type="radio" value="today" /><span
+            class="dateselect__span"
+            >Tomorrow</span
+          >
+          <label class="dateSelect">
+            <input class="dateselect__input" type="radio" value="today" /><span
+              class="dateselect__span"
+              >Today</span
+            ></div>
       <section class="taskList"></section>
-      <button aria-label="Add new task" class="actionButton">
-        <img src="src/assets/plus.svg" alt="Plus Symbol" />
-      </button>
+      <a href="new.html">
+        <button aria-label="Add new task" class="actionButton">
+          <img src="src/assets/plus.svg" alt="Plus Symbol" /></button
+      ></a>
     </main>
     <script type="module" src="index.js" defer="true"></script>
   </body>

@@ -204,3 +204,23 @@ h1 {
   background-color: var(--clr-primary);
   color: #fff;
 }
+.dateSelect {
+  color: var(--clr-text-passive);
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.dateSelect--active {
+  color: var(--clr-primary);
+}
+.dateselect__input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.dateselect__input:checked + .dateselect__span {
+  color: var(--clr-primary);
+}

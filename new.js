@@ -1,10 +1,5 @@
-// Display sleceted date onclick, button not part of form
-// const altButton = document.querySelector(".addTask__alternativeButton");
-
-import {
-  parseJSONFromLocalStorage,
-  stringifyJSONToLocalStorage,
-} from "./utils/localStorage";
+import { parseJSONFromLocalStorage } from "./utils/localStorage.js";
+import { stringifyJSONToLocalStorage } from "/utils/localStorage.js";
 
 const form = document.querySelector(".addTaskForm");
 
@@ -21,8 +16,17 @@ form.onsubmit = function (event) {
   newTask.title = textInput.value;
   newTask.date = checkedDateInput.value;
 
+  let taskArray = [newTask];
+
   console.log(
     `Hi you entered "${newTask.date}" as date and "${newTask.title}" as description`
   );
   console.log(newTask);
+
+  const oldTask = parseJSONFromLocalStorage("tasks", []);
+  taskArray = oldTask;
+  taskArray.push(newTask);
+  stringifyJSONToLocalStorage("tasks", taskArray);
+
+  window.location = "index.html";
 };
