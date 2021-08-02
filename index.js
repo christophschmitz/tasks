@@ -1,18 +1,12 @@
 import { parseJSONFromLocalStorage } from "./utils/localStorage.js";
-const menuButton = document.querySelector(".menuButton");
-menuButton.onclick = sendAlert;
 
-function sendAlert() {
-  alert("Hello World");
-}
-const tasklist = document.querySelector(".taskList");
+let taskList = document.querySelector(".taskList");
 
 const tasks = parseJSONFromLocalStorage("tasks", []);
-const taskListItems = tasks.map((task) => createTaskListItem(task));
 
-// const taskOne = createTaskListItem("Kaffee kochen");
-// const taskTwo = createTaskListItem("Hund ausführen");
-tasklist.append(...taskListItems);
+let tasksArr = tasks.map((task) => createTaskListItem(task));
+
+taskList.append(...tasksArr);
 
 function createTaskListItem(task) {
   const taskListItem = document.createElement("label");
@@ -33,3 +27,16 @@ function createTaskListItem(task) {
 
   return taskListItem;
 }
+
+function onClickFilter(date) {
+  const filteredTasks = tasks.filter((task) => task.date === date);
+  tasksArr = filteredTasks.map((task) => createTaskListItem(task));
+  taskList.innerHTML = "";
+  taskList.append(...tasksArr);
+}
+
+const radios = document.querySelectorAll(".dateselect__input");
+
+radios.forEach((radio) => {
+  radio.onclick = () => onClickFilter(radio.value);
+});

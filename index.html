@@ -19,21 +19,34 @@
         </button>
       </div>
       <div class="dateselector">
-      <label class="dateSelect">
-        <input class="dateselect__input" type="radio" value="today" /><span
-          class="dateselect__span"
-          >This Week</span
-        >
-        <label class="dateSelect">
-          <input class="dateselect__input" type="radio" value="today" /><span
-            class="dateselect__span"
-            >Tomorrow</span
-          >
-          <label class="dateSelect">
-            <input class="dateselect__input" type="radio" value="today" /><span
-              class="dateselect__span"
-              >Today</span
-            ></div>
+        <label>
+          <input
+            class="dateselect__input"
+            type="radio"
+            name="when"
+            value="today"
+          />
+          <span class="dateselect__span">Today</span>
+        </label>
+        <label>
+          <input
+            class="dateselect__input"
+            type="radio"
+            name="when"
+            value="tomorrow"
+          />
+          <span class="dateselect__span">Tomorrow</span>
+        </label>
+        <label>
+          <input
+            class="dateselect__input"
+            type="radio"
+            name="when"
+            value="thisweek"
+          />
+          <span class="dateselect__span">This Week</span>
+        </label>
+      </div>
       <section class="taskList"></section>
       <a href="new.html">
         <button aria-label="Add new task" class="actionButton">
