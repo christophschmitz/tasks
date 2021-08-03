@@ -202,6 +202,7 @@ h1 {
   background-color: var(--clr-primary);
   color: #fff;
 }
+
 .dateselector {
   color: var(--clr-text-passive);
   writing-mode: vertical-lr;
