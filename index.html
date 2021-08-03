@@ -18,48 +18,41 @@
           <img src="./assets/bell.svg" alt="Notification Bell" />
         </button>
       </div>
-
-      <section class="dateSelector">
-        <a href="#" class="taskNavLink">Today</a>
-        <a href="#" class="taskNavLink">Tomorrow</a>
-        <a href="#" class="taskNavLink">This Week</a>
-      </section>
-      <section class="taskList">
-        <label class="taskItem">
-          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
-            class="taskItem__labelText"
-            >Book appointment with Jared</span
-          >
+      <div class="dateselector">
+        <label>
+          <input
+            class="dateselect__input"
+            type="radio"
+            name="when"
+            value="today"
+          />
+          <span class="dateselect__span">Today</span>
         </label>
-        <label class="taskItem">
-          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
-            class="taskItem__labelText"
-            >Walk the dog</span
-          >
+        <label>
+          <input
+            class="dateselect__input"
+            type="radio"
+            name="when"
+            value="tomorrow"
+          />
+          <span class="dateselect__span">Tomorrow</span>
         </label>
-        <label class="taskItem">
-          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
-            class="taskItem__labelText"
-            >Eat lunch and walk</span
-          >
+        <label>
+          <input
+            class="dateselect__input"
+            type="radio"
+            name="when"
+            value="thisweek"
+          />
+          <span class="dateselect__span">This Week</span>
         </label>
-        <label class="taskItem">
-          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
-            class="taskItem__labelText"
-            >Cook a delicious dinner for everyone</span
-          >
-        </label>
-        <label class="taskItem">
-          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
-            class="taskItem__labelText"
-            >Go to Heidepark with the Family on every weekend of the year</span
-          >
-        </label>
-      </section>
-      <button aria-label="Add new task" class="actionButton">
-        <img src="src/assets/plus.svg" alt="Plus Symbol" />
-      </button>
+      </div>
+      <section class="taskList"></section>
+      <a href="new.html">
+        <button aria-label="Add new task" class="actionButton">
+          <img src="src/assets/plus.svg" alt="Plus Symbol" /></button
+      ></a>
     </main>
-    <script src="index.js" defer="true"></script>
+    <script type="module" src="index.js" defer="true"></script>
   </body>
 </html>

@@ -187,9 +187,7 @@ h1 {
 }
 
 .addTaskForm__radio {
-  width: 0;
-  height: 0;
-  opacity: 0;
+  display: none;
 }
 
 .addTaskForm__radio:checked + .addTaskForm__radioLabel {
@@ -203,4 +201,28 @@ h1 {
   padding: 2rem;
   background-color: var(--clr-primary);
   color: #fff;
+}
+
+.dateselector {
+  color: var(--clr-text-passive);
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: flex;
+  justify-content: space-around;
+  justify-self: center;
+}
+.dateSelect--active {
+  color: var(--clr-primary);
+}
+.dateselect__input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.dateselect__input:checked + .dateselect__span {
+  color: var(--clr-primary);
 }
